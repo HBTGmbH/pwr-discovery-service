@@ -1,0 +1,10 @@
+version: '2'
+services:
+  discovery-server:
+    image: pwr-discovery-service:local
+    ports:
+      - "8761:8761"
+    volumes:
+      - pwr-log-files:/logs
+volumes:
+  pwr-log-files: {}
